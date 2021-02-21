@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	   	<title>About me</title>
+		<meta charset="UTF-8">
+        <meta name="description" content="First Personal Website UI and accessibility improvements">
+        <meta name="keywords" content="UI, HTML, CSS, Focus states">
+        <meta name="author" content="Kezia Yu">
+	   	<link href="css/mystyle.css" type="text/css" rel="stylesheet"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script> 
+		// slide toggle contact form
+		$(document).ready(function(){
+			$("#flip").click(function(){
+				$("#panel").slideToggle("slow");
+			});
+		});
+
+		// Tab focus event for the form
+		$(document).ready(function(){
+			$("#flip").focus(function(){
+				$("#panel").slideDown("slow");
+			});
+		});
+
+		// Source: for alert box post submission: https://www.w3schools.com/jquery/event_submit.asp
+
+		$(document).ready(function(){
+			$("#panel").submit(function(){
+				alert("Submitted, Thank you!");
+			});
+		});
+
+		</script>
+  	</head>	
+   	<body>
+
+	<div class="container">
+		<img src="images/sunset-desert-dunes-minimal-wallpaper.jpg" alt="Sun" width="840" height="200" style="width:100%;">
+		<div class="centered"> All About Me Myself and I </div>
+  	</div> 
+
+	<div class="nav">
+		<ul>
+			<li><a href="index.html" >HOME</a></li>
+			<li><a href="gallery.html" >GALLERY</a></li>
+			<li><a href="aboutme.html" >ABOUT ME</a></li>
+		</ul>
+	</div>
+	<div>
+	
+	<div class="column">
+		<h3>Who even is she?</h3>
+		<p> Hello! My name is Kezia and I'm born and raised in Toronto. 
+		I love travelling, being active and going on hikes. 
+		I studied at the Univeristy of Toronto and graduated with 
+		a Bacholors of Arts degree in Human Geography, and a double minor 
+		in Environmental Geography and Geographic Information System (GIS). I was part of the Womens Varsity Rugby team 
+		for 2 years; Wing and Fullback were my positions.</p>
+		<p>After graduation, I fulfilled my goal of becoming a flight attendant. 
+		I worked at WestJet Encore for a little over a year but due to Covid-19 I found myself furloughed. 
+		The airline industry really took a hit. Thus began my journey back to GIS.</p> 
+		<p>I love maps and so I decided to return to school and am currently 
+		completing a graduate certificate of Geographic Information System, Cartographic Specialist at Fleming College.
+		I'm gaining skills and learning a lot as I re-enter into the world of GIS.
+		These skills include: HTML, CSS, Python, ArcGISPro, AutoCad, AdobeIllustrator, MAPublisher and Geomatica.</p>
+		<p>Thank you for visiting my wesite! Happy to share about my one week visit to Vancouver.
+		Feel free to connect with me to talk more about travelling or GIS!</p>
+	</div>
+
+
+	<div class="column2">
+		<img src="images/me.jpeg" alt="Flight Attendant" width="250" height="333">
+		<img src="images/me2.jpeg" alt="Rugby Headshot" width="250" height="302">
+	</div>
+
+
+	<!-- Source for focus on non-interactive elements with tabindex: 
+		https://hacks.mozilla.org/2019/06/indicating-focus-to-improve-accessibility/#:~:text=Focusing%20non%2Dinteractive%20elements&text=Any%20element%20can%20be%20added,but%20cannot%20be%20tabbed%20to -->
+	<section class="contactform">
+		<h5 id="flip" tabindex="0">Get Connected Click Here</h5>
+		<form id="panel">
+			<label for="fname">Name</label>
+			<input type="text" id="fname" name="fname"><br>
+			<label for="city">City</label>
+			<input type="text" id="city" name="city"><br>
+			<label for="email">E-mail</label>
+			<input type="text" id="email" name="email"><br>
+			<input id="sub" type="submit" value="Submit">
+		</form>	
+	</section>
+</div>
+
+
+
+<div class="footer">
+	<p1><a href="https://www.linkedin.com/in/keziayu/" target="_blank">Linkedin</a></p1>
+</div>
+</body>
+</html>
