@@ -75,7 +75,7 @@ h1 {
 h2 {
 	color: darkslategrey;
 	text-align:center;
-	font-size: small;
+	font-size: medium;
 	font-style:regular;
 
 }
@@ -185,7 +185,7 @@ img {
 
 	/* changing the colour of the link so it is obvious that it is clickable and linked to an external source*/
 	.footer1 a:link {
-	color: rgb(255, 123, 0);
+	color: darkslategray;
 	background-color: transparent;
 	text-decoration: none;	
 	}
