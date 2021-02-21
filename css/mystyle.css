@@ -194,13 +194,13 @@ img {
 	}
 	/* adding a hover to this and changing the hover color */
 	.footer1 a:hover {
-	color: indigo;
+	color: navy;
 	text-decoration: underline;
 	font-weight: bold;
 	}
 	
 	.footer1 a:visited {
-	color: rebeccapurple;
+	color: navy;
 	text-decoration: none;
 	}
 
@@ -374,7 +374,7 @@ input[type=submit]:hover{
   
    /* changing the colour of the link so it is obvious that it is clickable and linked to an external source*/
   .footer a:link {
-	color: dodgerblue;
+	color: navy;
 	background-color: transparent;
 	text-decoration: none;
 	font-weight: bold;
@@ -382,7 +382,7 @@ input[type=submit]:hover{
 
   /* focus state tab for footer link */
   .footer a:focus {
-	outline: 3px solid fuchsia; 
+	outline: 3px solid navy; 
 	font-size: large;
 	}
 
@@ -391,10 +391,11 @@ input[type=submit]:hover{
 	background-color: transparent;
 	text-decoration: underline;
 	font-size: large;
+	color: fuchsia;
   }
   
   .footer a:visited {
-	color: fuchsia;
+	color: navy		;
 	background-color: transparent;
 	text-decoration: none;
   }
