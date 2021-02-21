@@ -157,6 +157,8 @@ img {
 	.column2 li a:hover {
 		background-color: palegoldenrod;
 		text-decoration: underline;
+		font-weight: bold;
+		color:#d162bf;
 	}
 
 	.column2 li a:visited {
@@ -166,7 +168,9 @@ img {
 
 	/* Focus state highlight links from column2 when tabbing */
 	.column2 li a:focus { 
-		background-color: palegoldenrod;		
+		background-color: palegoldenrod;
+		font-weight:bolder;
+		color: indigo;		
 	}
 
 .footer1 {
@@ -177,8 +181,7 @@ img {
 	background-color: palegoldenrod;
 	text-align: center;
 	padding: 2px;
-	color:white;
-	opacity: 0.4;
+	opacity: 0.5;
 	font-size: 16px;
 	padding: 10px;
 }
@@ -194,6 +197,7 @@ img {
 	color: rgb(255, 94, 0);
 	background-color: transparent;
 	text-decoration: underline;
+	font-weight: bold;
 	}
 	
 	.footer1 a:visited {
@@ -366,8 +370,7 @@ input[type=submit]:hover{
 	background-color: palegoldenrod;
 	text-align: center;
 	padding: 2px;
-	color:white;
-	opacity: 0.4;
+	opacity: 0.5;
 	font-size: 16px;
 	padding: 10px;
   }
@@ -392,6 +395,7 @@ input[type=submit]:hover{
 	color: rgb(255, 94, 0);
 	background-color: transparent;
 	text-decoration: underline;
+	font-weight:bold;
   }
   
   .footer a:visited {
