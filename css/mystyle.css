@@ -1,0 +1,398 @@
+/*Set default for the whole page*/
+* {
+	box-sizing: border-box;
+  }
+
+  body {
+	font-family: "Gill Sans", sans-serif;
+  }
+
+  /* Header and nav bar styling */
+  .container {
+	position: relative;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 48pt;
+	font-family: Helvetica
+  }
+  
+  .centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+.nav {
+	margin-top: 10px;
+	padding: 5px;
+	background-color: rgb(202, 209, 106);
+	text-align: center;
+	overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+
+li {
+	float: left;
+}
+
+li a{
+  display: inline;
+  color: white;
+  text-align: center;
+  padding:20px 20px;
+  text-decoration: none;
+  overflow:hidden;
+}
+
+li a:hover {
+  background-color: #d162bf;
+}
+
+/* tab styling */
+li a:focus {
+	background-color:#d162bf;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	font-family: Helvetica;
+}
+
+h2 {
+	color: darkslategrey;
+	text-align:center;
+	font-size: small;
+	font-style:regular;
+
+}
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #871F78;
+	font-family: Helvetica;
+}
+
+h4, h6 {
+	color:#871F78;
+	text-align: center;
+	margin: 5px;
+}
+
+
+p {
+	text-align: left;
+	color: rgb(68, 68, 68);
+	margin: 20px;
+	padding: 10px;
+}
+
+/*Adapted From: https://www.fuseneon.com */
+/*Style the images*/
+img {
+	border-radius: 8px; /*round border*/
+	margin: 5px;
+	display: block;
+	margin-left: auto; /*margin-left and margin-right set to auto to center the image*/
+	margin-right: auto;
+}
+
+/* ***********************Home Page************************************************************************** */
+#pageContainer {
+	position: relative;
+	min-height: 100vh;
+}
+
+.column {
+    float: left;
+    width: 65%;
+    padding: 39px;
+    background-color: #ffffff;
+    text-align: center;
+    Height: 136%;
+	border-radius: 25px; /*round the border*/
+	border: 3px palegoldenrod solid;
+	margin: 25px;
+}
+
+	.column ul li {
+		color: darkslategray;
+		font-weight: bold;
+		text-align: left;
+		padding: 5px;
+	}
+
+.column2 {
+
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	height: 100%;
+	color: white;	
+
+}
+
+	.column2 li {
+		margin: 20px;
+	}
+
+	.column2 li a{
+		color: darkslategray;
+		text-decoration:none;
+	}
+
+	.column2 li a:hover {
+		background-color: palegoldenrod;
+		text-decoration: underline;
+	}
+
+	.column2 li a:visited {
+		color:rgb(0, 210, 247);
+		text-decoration: none;
+	}
+
+	/* Focus state highlight links from column2 when tabbing */
+	.column2 li a:focus { 
+		background-color: palegoldenrod;		
+	}
+
+.footer1 {
+	position: absolute;
+	bottom:0%;
+	width: 100%;
+	height: 2.5rem;
+	background-color: palegoldenrod;
+	text-align: center;
+	padding: 2px;
+	color:white;
+	opacity: 0.4;
+	font-size: 16px;
+	padding: 10px;
+}
+
+	/* changing the colour of the link so it is obvious that it is clickable and linked to an external source*/
+	.footer1 a:link {
+	color: rgb(255, 123, 0);
+	background-color: transparent;
+	text-decoration: none;	
+	}
+	/* adding a hover to this and changing the hover color */
+	.footer1 a:hover {
+	color: rgb(255, 94, 0);
+	background-color: transparent;
+	text-decoration: underline;
+	}
+	
+	.footer1 a:visited {
+	color: rebeccapurple;
+	background-color: transparent;
+	text-decoration: none;
+	}
+
+	/* Focus states for footer link to tab */
+	.footer1 a:focus {
+	outline: 3px solid rebeccapurple; 
+	font-weight: bold;
+	font-size: large;
+}
+
+/* **********************************Gallery Page**********************************************************/
+/*Adapted From: HTML and CSS design and build websites.pdf pg. 430*/
+/*style figure*/
+figure {
+	display: block;
+	text-align: center;
+}
+
+/*Adapted From: HTML and CSS design and build websites.pdf pg. 430*/
+figure img {
+	border: 3px #FED8B1 solid; /*set border color for images*/
+}
+
+/*Adapted From: https://www.fuseneon.com*/
+/*Style the section that images are in*/
+.gallerydesign {
+	margin: 10px;
+	display: block;
+	width: 100%;
+}
+
+/*Adapted From: https://www.fuseneon.com*/
+/*Style the paragraphs inside the gallery section*/
+.gallerydesign p{
+	font-style: regular;
+	color: darkslategray;
+	text-align: center;
+	background-color: #FED8B1;
+	border-radius: 2px;
+}
+
+/* ******************************************* About Me Page ********************************************************** */
+
+/*Style about me paragraph in the section class="aboutme" on About page*/
+.aboutme p{
+	text-align: left;
+}
+  
+h5 {
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(233, 74, 0);
+	font-family: Helvetica;
+	text-align: center;
+
+  }
+
+#panel {
+	display:none;
+}
+
+#flip {
+border: none;
+text-decoration: none;
+padding: 7px;
+color: rgb(255, 255, 255);
+background-color:rgb(233, 74, 0);
+text-align: center;
+cursor: pointer;
+height: 35px;
+width: 28%;
+border-radius: 5px;
+margin: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+  #flip:hover{
+	  font-size: x-large;
+	  color: purple;
+
+  }
+
+  /* Focus state to tab for id="flip" */
+  #flip:focus{
+	  font-size: x-large;
+	  background-color:#871F78;	
+	  border: 5px purple;		
+  }
+
+.contactform {
+	border: palegoldenrod 2px solid;
+	margin:5px;
+	border-radius: 10px;
+}
+
+form {
+	margin: 25px;
+	padding: 10px;
+	text-align:center;
+
+}
+
+/* Source: https://css-tricks.com/focusing-on-focus-styles/ */
+/* Source: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_dim_width_inputfocus */
+/* Set width of input field to 100px. When input field is in focus, make it 250px wide. */
+
+	form label {
+		font-weight: bold;
+		color:rgb(233, 74, 0);
+	}
+
+input[type=text] {
+	width: 250px;
+	-webkit-transition: width .35s ease-in-out;
+	transition: width .35s ease-in-out;
+	margin: 5px;
+	border-radius: 5px;
+	height: 32px;
+}
+
+input[type=text]:focus{
+	width: 400px;
+	border: rgb(0, 210, 247) 5px solid;
+	outline: none;
+}
+
+input[type=text]:hover{
+	border: rgb(0, 210, 247) 5px solid;
+}
+
+input[type=submit] {
+	margin: 10px;
+	font-size: medium;
+	font-weight: bold;
+	background-color:rgb(0, 210, 247);
+	padding: 10px;
+	color: whitesmoke;
+	border-radius: 5px;
+}
+
+/* focus state when tabbing through input boxes */
+input[type=submit]:focus{
+	width: 100px;
+	-webkit-transition: width .35s ease-in-out;
+	transition: width .35s ease-in-out;
+	-webkit-transition: height .35s ease-in-out;
+	transition: height .35s ease-in-out;
+	background-color: palegreen;
+	font-weight: bold;
+	font-size: large;
+
+}
+
+input[type=submit]:hover{
+	background-color: lightgreen;
+	border: 2px green solid;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: medium;
+	
+}
+
+.footer {
+	background-color: palegoldenrod;
+	text-align: center;
+	padding: 2px;
+	color:white;
+	opacity: 0.4;
+	font-size: 16px;
+	padding: 10px;
+  }
+  
+   /* changing the colour of the link so it is obvious that it is clickable and linked to an external source*/
+  .footer a:link {
+	color: rgb(255, 123, 0);
+	background-color: transparent;
+	text-decoration: none;
+	font-weight: bold;
+  }
+
+  /* focus state tab for footer link */
+  .footer a:focus {
+	outline: 3px solid rebeccapurple; 
+	font-weight: bold;
+	font-size: large;
+	}
+
+  /* adding a hover to this and changing the hover color */
+  .footer a:hover {
+	color: rgb(255, 94, 0);
+	background-color: transparent;
+	text-decoration: underline;
+  }
+  
+  .footer a:visited {
+	color: rebeccapurple;
+	background-color: transparent;
+	text-decoration: none;
+  }
+
