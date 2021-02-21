@@ -45,7 +45,8 @@ li {
 
 li a{
   display: inline;
-  color: white;
+  color: #d162bf;
+  font-weight: bold;
   text-align: center;
   padding:20px 20px;
   text-decoration: none;
@@ -53,12 +54,15 @@ li a{
 }
 
 li a:hover {
-  background-color: #d162bf;
+  background-color: white;
+  font-weight: normal;
 }
 
 /* tab styling */
 li a:focus {
-	background-color:#d162bf;
+	background-color: #d162bf;
+	font-weight: normal;
+	color: white;		
 }
 
 h1 {
