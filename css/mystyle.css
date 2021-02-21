@@ -12,7 +12,7 @@
 	position: relative;
 	text-align: center;
 	color: rgb(255, 255, 255);
-	font-size: 48pt;
+	font-size: 42pt;
 	font-family: Helvetica
   }
   
@@ -45,7 +45,7 @@ li {
 
 li a{
   display: inline;
-  color: #d162bf;
+  color: indigo;
   font-weight: bold;
   text-align: center;
   padding:20px 20px;
@@ -80,10 +80,12 @@ h2 {
 
 }
 h3 {
-	font-size: 20px;
 	font-weight: bold;
 	color: #871F78;
 	font-family: Helvetica;
+	padding:5px;
+	margin: 5px;
+
 }
 
 h4, h6 {
@@ -181,28 +183,24 @@ img {
 	background-color: palegoldenrod;
 	text-align: center;
 	padding: 2px;
-	opacity: 0.5;
 	font-size: 16px;
 	padding: 10px;
 }
 
 	/* changing the colour of the link so it is obvious that it is clickable and linked to an external source*/
 	.footer1 a:link {
-	color: darkslategray;
-	background-color: transparent;
+	color: midnightblue;
 	text-decoration: none;	
 	}
 	/* adding a hover to this and changing the hover color */
 	.footer1 a:hover {
-	color: rgb(255, 94, 0);
-	background-color: transparent;
+	color: indigo;
 	text-decoration: underline;
 	font-weight: bold;
 	}
 	
 	.footer1 a:visited {
 	color: rebeccapurple;
-	background-color: transparent;
 	text-decoration: none;
 	}
 
@@ -252,7 +250,7 @@ figure img {
 }
   
 h5 {
-	font-size: 20px;
+	font-size: 20pt;
 	font-weight: bold;
 	color: rgb(233, 74, 0);
 	font-family: Helvetica;
@@ -370,14 +368,13 @@ input[type=submit]:hover{
 	background-color: palegoldenrod;
 	text-align: center;
 	padding: 2px;
-	opacity: 0.5;
 	font-size: 16px;
 	padding: 10px;
   }
   
    /* changing the colour of the link so it is obvious that it is clickable and linked to an external source*/
   .footer a:link {
-	color: rgb(255, 123, 0);
+	color: dodgerblue;
 	background-color: transparent;
 	text-decoration: none;
 	font-weight: bold;
@@ -385,21 +382,19 @@ input[type=submit]:hover{
 
   /* focus state tab for footer link */
   .footer a:focus {
-	outline: 3px solid rebeccapurple; 
-	font-weight: bold;
+	outline: 3px solid fuchsia; 
 	font-size: large;
 	}
 
   /* adding a hover to this and changing the hover color */
   .footer a:hover {
-	color: rgb(255, 94, 0);
 	background-color: transparent;
 	text-decoration: underline;
-	font-weight:bold;
+	font-size: large;
   }
   
   .footer a:visited {
-	color: rebeccapurple;
+	color: fuchsia;
 	background-color: transparent;
 	text-decoration: none;
   }
